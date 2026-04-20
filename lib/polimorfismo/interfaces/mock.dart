@@ -1,5 +1,3 @@
-
-
 abstract interface class Repositorio {
   String buscarDado();
   void salvarDado(String dado);
@@ -33,8 +31,12 @@ void buscarOsDados(Repositorio repositorio) {
   print(repositorio.buscarDado());
 }
 
-class MockRepositorio implements Repositorio {
+// essa classe abaixo com o uso do noSuchMethod é criado implementando Repositorio
+// mas sem ter que implementar todos os metodos da interface class Repositorio
+// para isso utilizasse o método noSuchMethod e tratamos somente do metodo
+// que queremos implementar que no caso é o metodo buscarDado()
 
+class MockRepositorio implements Repositorio {
   @override
   noSuchMethod(Invocation invocation) {
     if (invocation.memberName == #buscarDado) {
@@ -51,4 +53,3 @@ void main(List<String> args) {
   buscarOsDados(r); // dado
   buscarOsDados(rMock); // Batata
 }
-
