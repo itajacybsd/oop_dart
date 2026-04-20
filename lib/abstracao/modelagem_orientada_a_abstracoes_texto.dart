@@ -67,3 +67,15 @@ void main() {
   alerta = ServicoDeAlerta(NotificadorSMS());
   alerta.dispararAlerta();
 }
+
+/*
+Os Benefícios Reais:
+Manutenibilidade: O erro no envio de SMS está na classe NotificadorSMS, 
+não espalhado por todo o projeto.
+
+Testabilidade: Você pode criar um MockNotificador que não envia nada de verdade, 
+apenas para testar se a lógica do ServicoDeAlerta está correta.
+
+Agilidade: Você pode definir a interface hoje e deixar para decidir qual 
+banco de dados usar daqui a duas semanas.
+ */
