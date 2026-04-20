@@ -1,3 +1,5 @@
+// INTERFACE PURA COMO NÓS CONHECEMOS NO MUNDO POO
+//! NUNCA DEVE TER METODOS IMPLEMENTADOS
 // não há métodos implementados em uma interface
 // estamos definindo um contrato, adicionando os métodos do contrato
 
@@ -46,3 +48,5 @@ void main(List<String> args) {
   funcaoGerarRelatorioDeFechamento(sistemaPagamento); // executando através da função
   // funcaoGerarRelatorioDeFechamento(sistemaPagamento as InterfaceGerarRelatorio);
 }
+
+
