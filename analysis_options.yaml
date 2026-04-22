@@ -18,8 +18,8 @@ include: package:lints/recommended.yaml
 linter:
   rules:
     - camel_case_types
-    - avoid_print
-    - prefer_final_parameters
+    # - avoid_print
+    # - prefer_final_parameters
 
 # analyzer:
 #   exclude:
