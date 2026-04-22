@@ -19,7 +19,7 @@ linter:
   rules:
     - camel_case_types
     - avoid_print
-    # - prefer_final_parameters
+    - prefer_final_parameters
 
 # analyzer:
 #   exclude:
