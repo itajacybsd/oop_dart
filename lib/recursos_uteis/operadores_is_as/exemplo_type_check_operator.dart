@@ -36,7 +36,8 @@ void main(List<String> args) {
     animal.fazerSom();
 
     if (animal is Cachorro) {
-      animal.buscarBola(); // só imprime aqui quando for um Cachorro, rola uma autopromoeção de tipos
+      animal.buscarBola(); // só imprime aqui quando for um Cachorro, rola uma autopromoção de tipos
+      
     }
 
     // print('é Cachorro?: ${animal is Cachorro}');
